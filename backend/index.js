@@ -4,7 +4,7 @@ const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 3000
 
-const db_url = "mongodb+srv://new-user-31:04RKDEcmBt8YeWlu@cluster0.qjfafn9.mongodb.net/?retryWrites=true&w=majority"
+const db_url = "mongodb+srv://<username>:<password>@cluster0.qjfafn9.mongodb.net/?retryWrites=true&w=majority"
 
 // Connection to database
 mongoose.connect(db_url)
