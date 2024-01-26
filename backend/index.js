@@ -2,15 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-const dotenv = require("dotenv").config();
+const dotenv = require('dotenv')
+dotenv.config()
 
-console.log("DB_URL:", process.env.DB_URL);
-
+// Database Connection
 mongoose
-  .connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.DB_URL)
   .then(() => {
     console.log("Connected to the database");
   })
