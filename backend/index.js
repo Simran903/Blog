@@ -1,9 +1,11 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
+import express from 'express'
+import mongoose from 'mongoose';
+import cors from 'cors'
+import dotenv from 'dotenv'
+import userRoutes from './routes/userRoute.js'
+
 const app = express();
-const dotenv = require('dotenv')
-dotenv.config()
+dotenv.config();
 
 // Database Connection
 mongoose
@@ -22,3 +24,6 @@ app.use(cors());
 app.listen(3000, () => {
   console.log(`Server is running on port 3000`);
 });
+
+// APIS
+app.use("/api/user", userRoutes);
