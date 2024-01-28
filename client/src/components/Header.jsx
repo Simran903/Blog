@@ -10,10 +10,10 @@ const Header = () => {
     <Navbar className="border-b-2">
       <Link
         to="/"
-        className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
+        className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-whit text-white"
       >
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-pink-500 rounded-lg">
-          Blogger
+        <span className="px-2 py-1 bg-gradient-to-r from-teal-950 via-cyan-900 to-sky-950 rounded-lg">
+        SnapScribe
         </span>
       </Link>
       <form>
